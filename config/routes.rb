@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  get 'static_pages/home'
+  get 'static_pages/about'
+  get 'static_pages/contact'
+  get 'static_pages/photos'
+  get 'static_pages/where'
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
   get 'homepage/index'
